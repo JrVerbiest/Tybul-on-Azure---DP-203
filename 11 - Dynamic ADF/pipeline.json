@@ -121,7 +121,7 @@
                                     "type": "DatasetReference",
                                     "parameters": {
                                         "serverName": {
-                                            "value": "@pipeline().parameters.serverName",
+                                            "value": "@replace(pipeline().parameters.serverName, '.','-')",
                                             "type": "Expression"
                                         },
                                         "databaseName": {
